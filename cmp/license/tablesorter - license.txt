@@ -1,0 +1,5 @@
+Pulled from tableSorter website on 11/11/2013 - http://tablesorter.com/docs/
+
+Author: Christian Bach
+Version: 2.0.5 (changelog)
+Licence: Dual licensed (just pick!)under MIT or GPL licenses.

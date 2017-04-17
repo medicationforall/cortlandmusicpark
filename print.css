@@ -1,0 +1,131 @@
+@media print {
+
+@page {
+  margin:0;
+  margin-top:20px;
+}
+
+body > .page{
+box-shadow:none;
+margin:0px;
+}
+
+#header h1
+{
+display:inline-block;
+letter-spacing:3px;
+font-family: 'Smokum', sans-serif;
+color:#cf0f0f;
+/*color:#da0f0f;*/
+
+text-shadow:none;
+font-size:16pt;
+
+}
+
+#header h1 span
+{
+font-size:18pt;
+}
+
+#header img
+{
+display:none;
+}
+
+/*Bar*/
+.page #bar
+{
+box-shadow:none;
+border:0px solid transparent;
+margin:0px;
+}
+
+.page .calNav{
+display:none;
+}
+
+/*Nav*/
+.page #nav
+{
+border:0px solid transparent;
+}
+
+#nav a{
+display:none;
+}
+
+#nav em.page
+{
+display:none;
+}
+
+/*subnav*/
+.page #subNav
+{
+border:0px solid transparent;
+}
+
+#subNav a{
+display:none;
+}
+
+#subNav em.page
+{
+display:none;
+}
+
+
+.calendar .month .eventDetails.description {
+overflow:hidden;
+max-height:60px;
+}
+
+
+table td, table th {
+border: 1px solid black;
+}
+
+table td{
+height:50px;
+}
+
+table th{
+font-size:10pt;
+}
+
+.page #center {
+padding: 0px;
+}
+
+.page .calendar .month .eventDetails.title{
+font-size:9pt;
+}
+
+.page .calendar .month .eventDetails.description{
+font-size:8.5pt;
+}
+
+.page .calHeader{
+font-size:11pt;
+}
+
+/*Overrid indexes even boxshawdow*/
+.component.event
+{
+box-shadow:none;
+}
+
+#center .printStuff{
+display:block;
+}
+
+.calendarNav{
+display:none;
+}
+
+#center{
+padding-top:0px;
+}
+
+}

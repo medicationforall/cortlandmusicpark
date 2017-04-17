@@ -1,0 +1,4 @@
+Copied from their README.md on 11/11/2013 - https://github.com/blueimp/jQuery-File-Upload/blob/master/README.md 
+
+## License
+Released under the [MIT license](http://www.opensource.org/licenses/MIT).
