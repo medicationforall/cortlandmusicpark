@@ -49,25 +49,26 @@ $menuText = new Text('Menu Items','<table>
 <tr><td>Chicken Wings</td><td>5/ $4.00</td></tr>
 <tr><td>Chicken Wings</td><td>10/ $7.00</td></tr>
 <tr><td>Chicken Patty</td><td>$4.00</td></tr>
-<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td colspan="2"> </td></tr>
 
-<tr><td>&frac14;lb Hamburger</td><td>$3.25</td></tr>
+<tr><td>¼lb Hamburger</td><td>$3.25</td></tr>
 <tr><td>Cheeseburger</td><td>$3.50</td></tr>
 <tr><td>Deluxe Burger (Lettuce/Tomato/Onion)</td><td>$4.00</td></tr>
 <tr><td>Sausage Patty</td><td>$4.00</td></tr>
 <tr><td>Hoffman Hot Dog</td><td>$2.50</td></tr>
 <tr><td>Grilled Cheese</td><td>$2.00</td></tr>
-<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td colspan="2"> </td></tr>
 
 <tr><td>French Fries</td><td>$2.50</td></tr>
 <tr><td>French Fries w/ Gravy</td><td>$2.75</td></tr>
 <tr><td>Onion Rings</td><td>$2.50</td></tr>
 <tr><td>Mozzarella Sticks</td><td>6/ $3.50</td></tr>
-<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td>Popcorn</td><td>$1.00</td></tr>
+<tr><td colspan="2"> </td></tr>
 
-<tr><td>Soda</td><td>$1.25</td></tr>
+<tr><td>Soda</td><td>$1.50</td></tr>
 <tr><td>Water, Coffee, Tea, Lemonade, & Hot Chocolate</td><td>$1.00</td></tr>
-<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td colspan="2"> </td></tr>
 
 <tr><td>Chips</td><td>$0.50</td></tr>
 <tr><td>Candy Bars</td><td>$1.00</td></tr>
