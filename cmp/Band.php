@@ -21,6 +21,9 @@ private $tag = "";
 	}
 
 //methods
+/**
+ *
+ */
 	function process(){
 		if($this->loaded == false){
 			$this->loadWebsites();
@@ -54,6 +57,9 @@ private $tag = "";
 	}
 
 
+/**
+ *
+ */
 	function loadWebsites(){
 		$mysqli = $this->getParent('page')->getConnect()->getMysqli();
 
@@ -80,6 +86,10 @@ private $tag = "";
 		}
 	}
 
+
+/**
+ *
+ */
 	function cContent(){
 		echo '<div class="cContent">';
 
@@ -105,9 +115,7 @@ private $tag = "";
 			$count = count($children);
 
 			for($i = 0; $i < $count && $i < 10;$i++){
-
 				$children[$i]->showThumb();
-
 			}
 		echo '</div>';
 		}
@@ -123,29 +131,49 @@ private $tag = "";
 	}
 
 
+/**
+ *
+ */
 	function setBandId($id){
 		$this->bandId = $id;
 	}
 
 
+/**
+ *
+ */
 	function getBandId(){
 		return $this->bandId;
 	}
 
 
+/**
+ *
+ */
 	function setBandName($name){
 		$this->bandName = $name;
 	}
 
 
+/**
+ *
+ */
 	function getBandName(){
 		return $this->bandName;
 	}
 
+
+/**
+ *
+ */
 	function isActive(){
 		return $this->active;
 	}
 
+
+/**
+ *
+ */
 	function getBandLink(){
 		$refPge = "";
 		$parent = $this->getParent('componentBandList');
@@ -168,13 +196,39 @@ private $tag = "";
 		$returner .= '</div>';
 
 		return $returner;
-
 	}
 
+/**
+ *
+ */
+	function getBandImage(){
+		$imgLink ='';
+
+		if(!empty($this->tag)){
+			$_REQUEST['tag'] = $this->tag;
+			$this->gallery = $this->getParent('page')->getApp('gallery2');
+			$this->gallery->process();
+
+			$children = $this->gallery->getChildren();
+
+			if(count($children)>0){
+				$imgLink = '<img src="thumb/'.str_replace('"','&quot;',$children[0]->getFileName().$children[0]->printVersion()).'" alt="'.$children[0]->getFileName().'" />';
+			}
+		}
+
+		return $imgLink;
+	}
+
+/**
+ *
+ */
 	function setTag($tag){
 		$this->tag = $tag;
 	}
 
+/**
+ *
+ */
 	function siteMap(){
 		$refPge = "";
 		$parent = $this->getParent('componentBandList');
@@ -188,7 +242,5 @@ private $tag = "";
 		echo ' <loc>'.$this->curPageURL().str_replace('sitemap.php','',$_SERVER["PHP_SELF"]).$refPage.'?viewband='.urlEncode($this->getUnique()).'</loc>'."\n";
 		echo '</url>'."\n";
 	}
-
 }
-
 ?>

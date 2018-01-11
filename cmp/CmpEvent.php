@@ -9,9 +9,9 @@
 
 class CmpEvent extends Event{
 
-private $linkTitle = "";
-
-private $linkDescription = "";
+private $linkImage = '';
+private $linkTitle = '';
+private $linkDescription = '';
 
 //array or prices associated with an event.
 private $price = array();
@@ -86,17 +86,27 @@ private $price = array();
 			if(stripos($title,$band->getBandName()) !== false){
 				//print 'found band in title';
 				$title = str_ireplace($band->getBandName(),$band->getBandLink(),$title);
+				$this->setBandImage($band);
 			}
 
 			if(stripos($description,$band->getBandName()) !== false){
 				//print '<br />found band in description '.$band->getBandName().' '.$this->getUnique().' '.stripos($description,$band->getBandName());
 				$description = str_ireplace($band->getBandName(),$band->getBandLink(),$description);
+				$this->setBandImage($band);
 			}
 		}
 
 		$this->linkTitle =$title;
 		$this->linkDescription = $description;
 
+	}
+
+
+/**
+ *
+ */
+	function setBandImage($band){
+		$this->linkImage = $band->getBandImage();
 	}
 
 
@@ -176,7 +186,9 @@ private $price = array();
 		}
 
 		echo '<div class="cContent">';
-		//echo 'cmp test';
+		echo '<div class="image">';
+		echo $this->linkImage;
+		echo '</div>';
 		echo '<div class="title" itemprop="name">';
 		echo $this->linkTitle;
 		echo '</div>';
@@ -186,7 +198,6 @@ private $price = array();
 		$this->printCancelled();
 		$this->printSoldOut();
 		$this->printLimitedTickets();
-		
 		echo '</div>';
 	}
 

@@ -834,8 +834,10 @@ function styleDegreeOffset(){
 	{
 		$this->description = $d;
 	}
+
+
 /**
- *Print the image thumg.
+ *Print the image thumb.
  */
 	function showThumb()
 	{	
@@ -958,6 +960,11 @@ function styleDegreeOffset(){
 	function getFileName()
 	{
 		return $this->fileName;
+	}
+
+	function getFileNameResized()
+	{
+		return $this->fileNameResized;
 	}
 
 /**
