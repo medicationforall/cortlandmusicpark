@@ -100,8 +100,8 @@ $rates = new Text('','
 </table>
 <br />
 Short season (Memorial Day through Labor Day) <br />
-$750.00<br /><br />
-Long season (April 15th through October 15th) <br />$900.00
+$800.00<br /><br />
+Long season (April 15th through October 15th) <br />$950.00
 </p>
 ');
 $rates->setUnique('campgroundRates');
