@@ -37,7 +37,7 @@ class Calendar extends TagManager{
 	private $modelList = array('list','calendar','heatmap');
 
 	private $mode = "month";
-	private $modeList = array('month','year','currentweek','yearcurrent','upcoming');
+	private $modeList = array('month','year','currentweek','yearcurrent','upcoming','changed');
 
 	private $dateFormat = "Y-m-d H:i:s";
 
@@ -252,7 +252,7 @@ class Calendar extends TagManager{
 		$start = '';
 		$end = '';
 
-		if(strcmp($this->mode,'upcoming') ==0){
+		if(strcmp($this->mode,'upcoming') ==0 || strcmp($this->mode,'changed') ==0){
 			$day = date("d",strtotime($this->date));
 			$month = date("m",strtotime($this->date));
 			$year = date("Y",strtotime($this->date));
@@ -328,7 +328,13 @@ class Calendar extends TagManager{
 
 		$where = $this->queryWhere();
 
-		$query = 'SELECT `id`,`date`,`title`,`description`,`icon`,`type`,`cancelled`,`limitedtickets`,`soldout` FROM events WHERE `status`=\'active\' AND `date`>=? '.$endStr.' '.$where.' '.$this->customWhere.' ORDER BY `date` asc '.$limit;
+		$orderBy = 'ORDER BY `date` asc';
+
+		if(strcmp($this->mode,'changed') ==0){
+			$orderBy = 'ORDER BY `modified` desc';
+		}
+
+		$query = 'SELECT `id`,`date`,`title`,`description`,`icon`,`type`,`cancelled`,`limitedtickets`,`soldout` FROM events WHERE `status`=\'active\' AND `date`>=? '.$endStr.' '.$where.' '.$this->customWhere.' '.$orderBy.' '.$limit;
 		//print '<br />'.$start;
 		//print '<br />'.$end;
 		//print '<br />'.$query;
@@ -440,7 +446,7 @@ class Calendar extends TagManager{
 				$this->printMonth();	
 			} else if(strcmp($this->mode,'year')==0){
 				$this->printYear();
-			} else if(strcmp($this->mode,'upcoming')==0){
+			} else if(strcmp($this->mode,'upcoming')==0 || strcmp($this->mode,'changed')==0){
 				$this->printUpcoming();
 			} 
 		} else if(strcmp($this->model,'heatmap')==0){
