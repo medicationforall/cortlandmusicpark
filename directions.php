@@ -25,7 +25,7 @@ $subNav->add($map);
 
 $center = $page->findChild('center');
 
-$text = new Text('','We are located in beautiful Cortland New York, 1 mile east of Rt. 81 at 1824 State Route 13, Cortland, NY 13045.');
+$text = new Text('','We are located in beautiful Cortland New York, at 1845 Rt. 13N, Cortland, NY 13045.');
 $text->setUnique('directionsText');
 
 

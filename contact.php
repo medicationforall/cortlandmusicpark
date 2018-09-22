@@ -10,7 +10,7 @@ $page->setTitle('Contact - Cortland Music Park');
 $page->setStyle
 (
 '
-	#center 
+	#center
 	{
 		text-align:center;
 	}
@@ -22,7 +22,7 @@ $page->setStyle
 	}
 	.email
 	{
-		
+
 		text-align:left;
 		display:inline-block;
 	}
@@ -41,19 +41,10 @@ $contact = new Email('');
 $contact->setSubmitText('Send');
 
 $info = new Text('','
-<br />Mailing Address: 
-<br />
-<br />COUNTRY MUSIC PARK 
-<br />Box 402 
-<br />Cortland, N.Y. 13045 
-<br />
-<br />Call us at: 
-<br />607-753-0377 
-<br />
-<br />or Email us at: 
-<br />
-<a href="mailto:scma@cortlandmusicpark.org">scma@cortlandmusicpark.org
-</a>');
+COUNTRY MUSIC PARK<br />
+1845 Rt. 13N<br />
+Cortland, N.Y. 13045<br />
+607-753-0377');
 
 $info->setUnique('contactInfo');
 

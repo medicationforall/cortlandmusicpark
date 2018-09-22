@@ -570,6 +570,11 @@ margin:0px;
 margin-top:8px;
 }
 
+.calendar .event .description .red.note{
+background-color:transparent;
+color:red;
+}
+
 .calendar .event table{
 padding-top:10px;
 background:transparent;

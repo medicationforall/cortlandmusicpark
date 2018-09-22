@@ -45,7 +45,7 @@ $center = $page->findChild('center');
 
 
 $text = new Text('Membership Form','
-NAME _______________________________________<br /><br /> 
+NAME _______________________________________<br /><br />
 ADDRESS ___________________________________<br /><br />
 CITY ________________________________________<br /><br />
 DATE____________________ ZIP ________________<br /><br />
@@ -58,9 +58,9 @@ $text->setUnique('membershipFormText');
 $mail = new Text('','
 Mail To:<br />
 SCMA <br />
-BOX 402 <br />
-CORTLAND, N.Y. 13045<br /> 
-MEMBERSHIP IS $15.00 (PER PERSON) PER YEAR 
+1845 Rt. 13N <br />
+CORTLAND, N.Y. 13045<br />
+MEMBERSHIP IS $15.00 (PER PERSON) PER YEAR
 ');
 
 $mail->setUnique('membershipFormMail');

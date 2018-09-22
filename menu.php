@@ -60,7 +60,6 @@ $menuText = new Text('Menu Items','<table>
 <tr><td colspan="2"> </td></tr>
 
 <tr><td>French Fries</td><td>$2.50</td></tr>
-<tr><td>French Fries w/ Gravy</td><td>$2.75</td></tr>
 <tr><td>Onion Rings</td><td>$2.50</td></tr>
 <tr><td>Mozzarella Sticks</td><td>6/ $3.50</td></tr>
 <tr><td>Popcorn</td><td>$1.00</td></tr>

@@ -88,7 +88,7 @@ $text = new Text("",'
 <a href="halloffame.php">New York State Country Music Hall of Fame
 </a>. 
 <br />
-<br />We are located in beautiful Cortland, New York; 1 mile east of Rt. 81 at 1824 State Route 13, Cortland, NY 13045. 
+<br />We are located in beautiful Cortland, New York; 1 mile east of Rt. 81 at 1845 Rt. 13N, Cortland, NY 13045. 
 <br />
 <br />Check out our 
 <a href="calendar.php">Events Calendar

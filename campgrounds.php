@@ -51,7 +51,7 @@ $images->addClass('images');
 
 $quote =new Text('','
 <p>
-Our campground is set around a beautiful picturesque pond with a water spray in the 
+Our campground is set around a beautiful picturesque pond with a water spray in the
 middle of the pond.
 </p>
 ');
@@ -64,15 +64,15 @@ We have 106 campsites, water and electric are available for most sites. Toilets 
 </p>
 
 <p>
-Catch and Release fishing in the pond. Bass, Pike, Carp, and Bluegill, our biggest fish caught is a 29 inch Pike and a 6.5 pound Bass. 
+Catch and Release fishing in the pond. Bass, Pike, Carp, and Bluegill, our biggest fish caught is a 29 inch Pike and a 6.5 pound Bass.
 </p>
 
 <p>
-During the summer we hold a Fishing Derby, free hot dogs and soda are available for the Derby and prizes are given for largest fish caught. 
+During the summer we hold a Fishing Derby, free hot dogs and soda are available for the Derby and prizes are given for largest fish caught.
 </p>
 
 <p>
-We have a Recreation Hall available for luncheons, family reunions, parties, etc. Our campers come together for potluck dinners and pancake breakfasts. 
+We have a Recreation Hall available for luncheons, family reunions, parties, etc. Our campers come together for potluck dinners and pancake breakfasts.
 </p>
 ');
 
@@ -100,7 +100,7 @@ $rates = new Text('','
 </table>
 <br />
 Short season (Memorial Day through Labor Day) <br />
-$800.00<br /><br />
+$850.00<br /><br />
 Long season (April 15th through October 15th) <br />$950.00
 </p>
 ');

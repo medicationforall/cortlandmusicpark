@@ -20,7 +20,7 @@ $images->addClass('images');
 
 $opry = new Text("Our Opry Barn",'
 
-<p>The centerpiece of the Cortland Country Music Park is the Opry Barn. Among the many events that take place are our regular Saturday Round & Square Dances (7-11 p.m.) and the Sunday afternoon dances (2-6 p.m.).</a>
+<p>The centerpiece of the Cortland Country Music Park is the Opry Barn. Among the many events that take place are our regular Saturday Round & Square Dances (7-10 p.m.) and the Sunday afternoon dances (2-5 p.m.).</a>
 <ul>
 <li>We have a kitchen offering hot dogs, hamburgers, french fries, and many other items including special dinners every so often.</li>
 <li>We have a bar with draft beer, bottled and can beer and a limited amount of mixed drinks.</li>
@@ -33,7 +33,7 @@ $opry = new Text("Our Opry Barn",'
 The barn has a 50 x 30 ft. hardwood dance floor that is popular with the many dancers that regularly attend functions at the park.<br />
 It also has a 50 x 30 ft. stage that can be easily accessed by the many performers that appear regularly and is especially valuable for the many shows performed throughout the year.<br />
 In Feb. we have a Valentine’s Dinner Dance and several times throughout the year we have Tribute Dinner Shows performed by our many talented local bands.<br />
-In late May or early June we have a Tribute to the Veterans Dinner Dance where we honor our Veterans past and present.<br />
+In November we have a Tribute to the Veterans Dinner Dance where we honor our Veterans past and present.<br />
 On the last Sunday of Oct. we have our annual Hall of Fame Dinner Show and Dance. This is when we induct 3 new members into the Hall of Fame. We also induct qualified persons into the Hall of Honor and present a Horizon Award and Lifetime Achievement Award.<br />
 We are in the process of adding new bathrooms, with 5 toilets for the women’s, and 5 for the men’s with handicap accessibility.
 </p>
