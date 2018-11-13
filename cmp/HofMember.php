@@ -497,16 +497,20 @@ private $selected = false;
 		$children = $this->getChildren();
 		$hoh ='';
 		$hof ='';
+		$life ='';
 
 		foreach($children as $child){
 			if(strcmp($child->getAwardTitle(),'Hall of Honor')==0 || strcmp($child->getAwardTitle(),'Horizon Award')==0){
 				$hoh = $child->getYear().' - '.$child->getAwardTitle();
-			}else if(strcmp($child->getAwardTitle(),'Hall of Fame')==0 || strcmp($child->getAwardTitle(),'Lifetime Achievement Award')==0){
+			}else if(strcmp($child->getAwardTitle(),'Hall of Fame')==0){
 				$hof = $child->getYear().' - '.$child->getAwardTitle();
+			}else if(strcmp($child->getAwardTitle(),'Lifetime Achievement Award')==0){
+				$life = $child->getYear().' - '.$child->getAwardTitle();	
 			}
 		}
 		$out .= '<td>'.$hoh.'</td>';
 		$out .= '<td>'.$hof.'</td>';
+		$out .= '<td>'.$life.'</td>';
 
 		if($this->getDeceased()==1){
 			$out .= '<td class="hcenter">'.'X'.'</td>';

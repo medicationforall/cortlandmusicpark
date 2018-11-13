@@ -200,7 +200,7 @@ private $memberDialog = null;
 		}
 		echo '<table>';
 		echo '<thead>';
-		echo '<tr><th class="headerSortDown">First Name</th><th class="headerSortDown">Last Name</th><th>Hall of Honor Year Inducted</th><th>Hall of Fame Year Inducted</th><th>Deceased</th></tr>';
+		echo '<tr><th class="headerSortDown">First Name</th><th class="headerSortDown">Last Name</th><th>Hall of Honor Year Inducted</th><th>Hall of Fame Year Inducted</th><th>Lifetime Achievement Year Inducted</th><th>Deceased</th></tr>';
 		echo '</thead>';
 
 		echo '<tbody>';
@@ -244,7 +244,7 @@ private $memberDialog = null;
 		}
 		echo '<table>';
 		echo '<thead>';
-		echo '<tr><th>Edit</th><th class="headerSortDown">First Name</th><th class="headerSortDown">Last Name</th><th>Hall of Honor Year Inducted</th><th>Hall of Fame Year Inducted</th><th>Deceased</th></tr>';
+		echo '<tr><th>Edit</th><th class="headerSortDown">First Name</th><th class="headerSortDown">Last Name</th><th>Hall of Honor Year Inducted</th><th>Hall of Fame Year Inducted</th><th>Lifetime Achievement Year Inducted</th><th>Deceased</th></tr>';
 		echo '</thead>';
 
 		echo '<tbody>';
