@@ -1,4 +1,7 @@
 # cortlandmusicpark
+
+THIS REPOSITORY IS ARCHIVED AND READ ONLY.
+
 [Cortland Country Music Park Website](https://cortlandmusicpark.org)
 
 This is the source code for the Cortland Country Music Park Website.
